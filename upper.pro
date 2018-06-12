@@ -28,16 +28,16 @@ INCLUDEPATH += power_parameter
 
 SOURCES += \
         main.cpp \
-        widget.cpp \
     power_parameter/currentSignal.cpp \
     power_parameter/PowerQuality.cpp \
-    power_parameter/voltageSignal.cpp
+    power_parameter/voltageSignal.cpp \
+    mainScreen.cpp
 
 HEADERS += \
-        widget.h \
     power_parameter/currentSignal.h \
     power_parameter/PowerQuality.h \
-    power_parameter/voltageSignal.h
+    power_parameter/voltageSignal.h \
+    mainScreen.h
 
 FORMS += \
-        widget.ui
+    mainScreen.ui

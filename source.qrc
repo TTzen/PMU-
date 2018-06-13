@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/config">
+        <file>image/config.png</file>
+        <file>image/Main.png</file>
+        <file>image/Measure.png</file>
+        <file>image/Sync.png</file>
+        <file>image/split.png</file>
+        <file>image/play_active.png</file>
+        <file>image/play_passive.png</file>
+        <file>image/stop_active.png</file>
+        <file>image/stop_passive.png</file>
+        <file>image/GPS.png</file>
+    </qresource>
+</RCC>

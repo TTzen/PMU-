@@ -97,27 +97,27 @@ public:
         return m_CvoltageSignal;
     }
 
-    inline currentSignal A_voltageSignal_ch1() const{
+    inline currentSignal A_currentSignal_ch1() const{
         return m_AcurrentSignal_channel_1;
     }
 
-    inline currentSignal B_voltageSignal_ch1() const{
+    inline currentSignal B_currentSignal_ch1() const{
         return m_BcurrentSignal_channel_1;
     }
 
-    inline currentSignal C_voltageSignal_ch1() const{
+    inline currentSignal C_currentSignal_ch1() const{
         return m_CcurrentSignal_channel_1;
     }
 
-    inline currentSignal A_voltageSignal_ch2() const{
+    inline currentSignal A_currentSignal_ch2() const{
         return m_AcurrentSignal_channel_2;
     }
 
-    inline currentSignal B_voltageSignal_ch2() const{
+    inline currentSignal B_currentSignal_ch2() const{
         return m_BcurrentSignal_channel_2;
     }
 
-    inline currentSignal C_voltageSignal_ch2() const{
+    inline currentSignal C_currentSignal_ch2() const{
         return m_CcurrentSignal_channel_2;
     }
 private:

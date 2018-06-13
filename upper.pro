@@ -31,13 +31,22 @@ SOURCES += \
     power_parameter/currentSignal.cpp \
     power_parameter/PowerQuality.cpp \
     power_parameter/voltageSignal.cpp \
-    mainScreen.cpp
+    mainScreen.cpp \
+    configMenu.cpp \
+    measure.cpp
 
 HEADERS += \
     power_parameter/currentSignal.h \
     power_parameter/PowerQuality.h \
     power_parameter/voltageSignal.h \
-    mainScreen.h
+    mainScreen.h \
+    configMenu.h \
+    measure.h
 
 FORMS += \
-    mainScreen.ui
+    mainScreen.ui \
+    configMenu.ui \
+    measure.ui
+
+RESOURCES += \
+    source.qrc

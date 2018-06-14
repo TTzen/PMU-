@@ -133,20 +133,9 @@
         <property name="title">
          <string>基本信息</string>
         </property>
-        <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0,0,0,0,0,0,1" columnstretch="0,0,0,0,0,0,0,0,0">
-         <item row="1" column="7">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>幅值</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="8">
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>相位</string>
-           </property>
-          </widget>
+        <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0,0,0,0,0,0">
+         <item row="4" column="3">
+          <widget class="QLineEdit" name="UcPhaseEdit"/>
          </item>
          <item row="1" column="2">
           <widget class="QLabel" name="label_9">
@@ -154,6 +143,21 @@
             <string>幅值</string>
            </property>
           </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="UaPhaseEdit"/>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="UcVoltageEdit"/>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="UbPhaseEdit"/>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLineEdit" name="UbFreqEdit"/>
+         </item>
+         <item row="4" column="4">
+          <widget class="QLineEdit" name="UcFreqEdit"/>
          </item>
          <item row="2" column="6">
           <widget class="QLabel" name="label_6">
@@ -165,11 +169,24 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="7">
-          <widget class="QLineEdit" name="IaCurrentEdit"/>
+         <item row="1" column="8">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>相位(ch1)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="UaVoltageEdit"/>
          </item>
          <item row="4" column="8">
-          <widget class="QLineEdit" name="IcPhaseEdit"/>
+          <widget class="QLineEdit" name="IcPhaseEdit_CH1"/>
+         </item>
+         <item row="2" column="8">
+          <widget class="QLineEdit" name="IaPhaseEdit_CH1"/>
+         </item>
+         <item row="2" column="7">
+          <widget class="QLineEdit" name="IaCurrentEdit_CH1"/>
          </item>
          <item row="4" column="6">
           <widget class="QLabel" name="label_8">
@@ -181,42 +198,24 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="8">
-          <widget class="QLineEdit" name="IaPhaseEdit"/>
-         </item>
-         <item row="2" column="3">
-          <widget class="QLineEdit" name="UaPhaseEdit"/>
-         </item>
-         <item row="4" column="3">
-          <widget class="QLineEdit" name="UcPhaseEdit"/>
-         </item>
-         <item row="4" column="4">
-          <widget class="QLineEdit" name="UcFreqEdit"/>
-         </item>
          <item row="3" column="7">
-          <widget class="QLineEdit" name="IbCurrentEdit"/>
+          <widget class="QLineEdit" name="IbCurrentEdit_CH1"/>
          </item>
-         <item row="3" column="4">
-          <widget class="QLineEdit" name="UbFreqEdit"/>
-         </item>
-         <item row="2" column="2">
-          <widget class="QLineEdit" name="UaVoltageEdit"/>
-         </item>
-         <item row="4" column="2">
-          <widget class="QLineEdit" name="UcVoltageEdit"/>
-         </item>
-         <item row="3" column="3">
-          <widget class="QLineEdit" name="UbPhaseEdit"/>
-         </item>
-         <item row="4" column="7">
-          <widget class="QLineEdit" name="IcCurrentEdit"/>
-         </item>
-         <item row="1" column="4">
-          <widget class="QLabel" name="label_11">
+         <item row="1" column="7">
+          <widget class="QLabel" name="label_12">
            <property name="text">
-            <string>频率</string>
+            <string>幅值(ch1)</string>
            </property>
           </widget>
+         </item>
+         <item row="2" column="10">
+          <widget class="QLineEdit" name="IaPhaseEdit_CH2"/>
+         </item>
+         <item row="2" column="9">
+          <widget class="QLineEdit" name="IaCurrentEdit_CH2"/>
+         </item>
+         <item row="4" column="7">
+          <widget class="QLineEdit" name="IcCurrentEdit_CH1"/>
          </item>
          <item row="1" column="3">
           <widget class="QLabel" name="label_10">
@@ -225,14 +224,28 @@
            </property>
           </widget>
          </item>
-         <item row="3" column="8">
-          <widget class="QLineEdit" name="IbPhaseEdit"/>
-         </item>
-         <item row="3" column="2">
-          <widget class="QLineEdit" name="UbVoltageEdit"/>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Ub</string>
+           </property>
+          </widget>
          </item>
          <item row="2" column="4">
           <widget class="QLineEdit" name="UaFreqEdit"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Uc</string>
+           </property>
+          </widget>
          </item>
          <item row="3" column="6">
           <widget class="QLabel" name="label_7">
@@ -241,6 +254,58 @@
            </property>
            <property name="text">
             <string>Ib</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2" colspan="2">
+          <widget class="QLineEdit" name="GPSInfoEdit"/>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>频率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="UbVoltageEdit"/>
+         </item>
+         <item row="3" column="8">
+          <widget class="QLineEdit" name="IbPhaseEdit_CH1"/>
+         </item>
+         <item row="4" column="5">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 170, 0);</string>
+           </property>
+           <property name="text">
+            <string>Ua</string>
            </property>
           </widget>
          </item>
@@ -257,66 +322,19 @@
            </property>
           </spacer>
          </item>
-         <item row="4" column="5">
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
+         <item row="3" column="9">
+          <widget class="QLineEdit" name="IbCurrentEdit_CH2"/>
          </item>
-         <item row="2" column="5">
-          <spacer name="horizontalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
+         <item row="3" column="10">
+          <widget class="QLineEdit" name="IbPhaseEdit_CH2"/>
          </item>
-         <item row="0" column="2" colspan="2">
-          <widget class="QLineEdit" name="GPSInfoEdit"/>
+         <item row="4" column="9">
+          <widget class="QLineEdit" name="IcCurrentEdit_CH2"/>
          </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_3">
-           <property name="styleSheet">
-            <string notr="true">color: rgb(255, 170, 0);</string>
-           </property>
-           <property name="text">
-            <string>Ua</string>
-           </property>
-          </widget>
+         <item row="4" column="10">
+          <widget class="QLineEdit" name="IcPhaseEdit_CH2"/>
          </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_4">
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 255, 0);</string>
-           </property>
-           <property name="text">
-            <string>Ub</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_5">
-           <property name="styleSheet">
-            <string notr="true">color: rgb(170, 0, 0);</string>
-           </property>
-           <property name="text">
-            <string>Uc</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0" colspan="9">
+         <item row="7" column="0" colspan="11">
           <widget class="QGroupBox" name="groupBox_4">
            <property name="title">
             <string>原始数据</string>
@@ -326,6 +344,20 @@
              <widget class="QTextEdit" name="SourceDataEdit"/>
             </item>
            </layout>
+          </widget>
+         </item>
+         <item row="1" column="9">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>幅值(ch2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="10">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>相位(ch2)</string>
+           </property>
           </widget>
          </item>
          <item row="0" column="0" colspan="2">

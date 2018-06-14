@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sync</class>
+ <widget class="QWidget" name="Sync">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" rowstretch="1,2,2">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,5,0">
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>Dev1 IP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Dev1IPEdit">
+           <property name="inputMask">
+            <string>000.000.000.000</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>Dev2 IP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Dev2IPEdit">
+           <property name="inputMask">
+            <string>000.000.000.000</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="source.qrc">
+             <normaloff>:/config/image/Sync_stop.png</normaloff>:/config/image/Sync_stop.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="3">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>同步量</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5" rowstretch="1,8,8">
+         <item row="1" column="0" colspan="2">
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7" rowstretch="0,0,0,0,0,0,0,0,0">
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="lineEdit_133"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_63">
+              <property name="text">
+               <string>△Uc</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_64">
+              <property name="text">
+               <string>△Ia</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_61">
+              <property name="text">
+               <string>△Ua</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_62">
+              <property name="text">
+               <string>△Ub</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_65">
+              <property name="text">
+               <string>△Ib</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_68">
+              <property name="text">
+               <string>相位</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="4">
+             <widget class="QLabel" name="label_73">
+              <property name="text">
+               <string>相位CH2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_70">
+              <property name="text">
+               <string>幅值CH1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QLabel" name="label_72">
+              <property name="text">
+               <string>幅值CH2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QLabel" name="label_71">
+              <property name="text">
+               <string>相位CH1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="label_69">
+              <property name="text">
+               <string>频率</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_67">
+              <property name="text">
+               <string>幅值</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLineEdit" name="lineEdit_134"/>
+            </item>
+            <item row="8" column="1">
+             <widget class="QLineEdit" name="lineEdit_139"/>
+            </item>
+            <item row="6" column="3">
+             <widget class="QLineEdit" name="lineEdit_135"/>
+            </item>
+            <item row="6" column="4">
+             <widget class="QLineEdit" name="lineEdit_136"/>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLineEdit" name="lineEdit_137"/>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLineEdit" name="lineEdit_140"/>
+            </item>
+            <item row="7" column="2">
+             <widget class="QLineEdit" name="lineEdit_138"/>
+            </item>
+            <item row="7" column="3">
+             <widget class="QLineEdit" name="lineEdit_141"/>
+            </item>
+            <item row="8" column="3">
+             <widget class="QLineEdit" name="lineEdit_142"/>
+            </item>
+            <item row="7" column="4">
+             <widget class="QLineEdit" name="lineEdit_143"/>
+            </item>
+            <item row="8" column="4">
+             <widget class="QLineEdit" name="lineEdit_144"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_145"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_146"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="lineEdit_147"/>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLineEdit" name="lineEdit_148"/>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEdit_149"/>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="lineEdit_150"/>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="lineEdit_151"/>
+            </item>
+            <item row="2" column="3">
+             <widget class="QLineEdit" name="lineEdit_152"/>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLineEdit" name="lineEdit_153">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_66">
+              <property name="text">
+               <string>△Ic</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0" colspan="5">
+             <widget class="Line" name="line_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_58">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>GPS2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLineEdit" name="lineEdit_130"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="lineEdit_129"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_57">
+              <property name="text">
+               <string>GPS1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>设备一</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>幅值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>MAX(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>MIN(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QLineEdit" name="Dev1IbCurrentEdit"/>
+         </item>
+         <item row="9" column="2">
+          <widget class="QLineEdit" name="Dev1IbCurrentMaxEdit"/>
+         </item>
+         <item row="9" column="3">
+          <widget class="QLineEdit" name="Dev1IbCurrentMinEdit"/>
+         </item>
+         <item row="9" column="4">
+          <widget class="QLineEdit" name="Dev1IbPaseEdit"/>
+         </item>
+         <item row="9" column="5">
+          <widget class="QLineEdit" name="Dev1IbPaseMaxEdit"/>
+         </item>
+         <item row="9" column="6">
+          <widget class="QLineEdit" name="Dev1IbPaseMinEdit"/>
+         </item>
+         <item row="9" column="7">
+          <widget class="QLineEdit" name="Dev1IbCurrentEdit_CH2"/>
+         </item>
+         <item row="9" column="8">
+          <widget class="QLineEdit" name="Dev1IbCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="9" column="9">
+          <widget class="QLineEdit" name="Dev1IbCurrentMinEdit_CH2"/>
+         </item>
+         <item row="9" column="10">
+          <widget class="QLineEdit" name="Dev1IbPhaseEdit_CH2"/>
+         </item>
+         <item row="9" column="11">
+          <widget class="QLineEdit" name="Dev1IbPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="9" column="12">
+          <widget class="QLineEdit" name="Dev1IbPhaseMinEdit_CH2"/>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Ic</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QLineEdit" name="Dev1IcCurrentEdit"/>
+         </item>
+         <item row="10" column="2">
+          <widget class="QLineEdit" name="Dev1IcCurrentMaxEdit"/>
+         </item>
+         <item row="10" column="3">
+          <widget class="QLineEdit" name="Dev1IcCurrentMinEdit"/>
+         </item>
+         <item row="10" column="4">
+          <widget class="QLineEdit" name="Dev1IcPaseEdit"/>
+         </item>
+         <item row="10" column="5">
+          <widget class="QLineEdit" name="Dev1IcPaseMaxEdit"/>
+         </item>
+         <item row="10" column="6">
+          <widget class="QLineEdit" name="Dev1IcPaseMinEdit"/>
+         </item>
+         <item row="10" column="7">
+          <widget class="QLineEdit" name="Dev1IcCurrentEdit_CH2"/>
+         </item>
+         <item row="10" column="8">
+          <widget class="QLineEdit" name="Dev1IcCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="10" column="9">
+          <widget class="QLineEdit" name="Dev1IcCurrentMinEdit_CH2"/>
+         </item>
+         <item row="10" column="10">
+          <widget class="QLineEdit" name="Dev1IcPhaseEdit_CH2"/>
+         </item>
+         <item row="10" column="11">
+          <widget class="QLineEdit" name="Dev1IcPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="10" column="12">
+          <widget class="QLineEdit" name="Dev1IcPhaseMinEdit_CH2"/>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>MAX(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>MIN(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>频率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="8">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>MAX（频率）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>MIN（频率）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="10" rowspan="4" colspan="3">
+          <widget class="QTextEdit" name="Dev1SourceDataTEdit"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Ua</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Dev1UaVolatageEdit"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="Dev1UaVolatageMaxEdit"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="Dev1UaVolatageMinEdit"/>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="Dev1UaPhaseEdit"/>
+         </item>
+         <item row="1" column="5">
+          <widget class="QLineEdit" name="Dev1UaPhaseMaxEdit"/>
+         </item>
+         <item row="1" column="6">
+          <widget class="QLineEdit" name="Dev1UaPhaseMinEdit"/>
+         </item>
+         <item row="1" column="7">
+          <widget class="QLineEdit" name="Dev1UaFreqEdit"/>
+         </item>
+         <item row="1" column="8">
+          <widget class="QLineEdit" name="Dev1UaFreqMaxEdit"/>
+         </item>
+         <item row="1" column="9">
+          <widget class="QLineEdit" name="Dev1UaFreqMinEdit"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Ub</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Dev1UbVolatageEdit"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="Dev1UbVolatageMaxEdit"/>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="Dev1UbVolatageMinEdit"/>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="Dev1UbPhaseEdit"/>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLineEdit" name="Dev1UbPhaseMaxEdit"/>
+         </item>
+         <item row="2" column="6">
+          <widget class="QLineEdit" name="Dev1UbPhaseMinEdit"/>
+         </item>
+         <item row="2" column="7">
+          <widget class="QLineEdit" name="Dev1UbFreqEdit"/>
+         </item>
+         <item row="2" column="8">
+          <widget class="QLineEdit" name="Dev1UbFreqMaxEdit"/>
+         </item>
+         <item row="2" column="9">
+          <widget class="QLineEdit" name="Dev1UbFreqMinEdit"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Uc</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="Dev1UcVolatageEdit"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="Dev1UcVolatageMaxEdit"/>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="Dev1UcVolatageMinEdit"/>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLineEdit" name="Dev1UcPhaseEdit"/>
+         </item>
+         <item row="3" column="5">
+          <widget class="QLineEdit" name="Dev1UcPhaseMaxEdit"/>
+         </item>
+         <item row="3" column="6">
+          <widget class="QLineEdit" name="Dev1UcPhaseMinEdit"/>
+         </item>
+         <item row="3" column="7">
+          <widget class="QLineEdit" name="Dev1UcFreqEdit"/>
+         </item>
+         <item row="3" column="8">
+          <widget class="QLineEdit" name="Dev1UcFreqMaxEdit"/>
+         </item>
+         <item row="3" column="9">
+          <widget class="QLineEdit" name="Dev1UcFreqMinEdit"/>
+         </item>
+         <item row="4" column="0" rowspan="3" colspan="13">
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Ia</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="Dev1IaCurrentEdit"/>
+         </item>
+         <item row="8" column="2">
+          <widget class="QLineEdit" name="Dev1IaCurrentMaxEdit"/>
+         </item>
+         <item row="8" column="3">
+          <widget class="QLineEdit" name="Dev1IaCurrentMinEdit"/>
+         </item>
+         <item row="8" column="4">
+          <widget class="QLineEdit" name="Dev1IaPaseEdit"/>
+         </item>
+         <item row="8" column="5">
+          <widget class="QLineEdit" name="Dev1IaPaseMaxEdit"/>
+         </item>
+         <item row="8" column="6">
+          <widget class="QLineEdit" name="Dev1IaPaseMinEdit"/>
+         </item>
+         <item row="8" column="7">
+          <widget class="QLineEdit" name="Dev1IaCurrentEdit_CH2"/>
+         </item>
+         <item row="8" column="8">
+          <widget class="QLineEdit" name="Dev1IaCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="8" column="9">
+          <widget class="QLineEdit" name="Dev1IaCurrentMinEdit_CH2"/>
+         </item>
+         <item row="8" column="10">
+          <widget class="QLineEdit" name="Dev1IaPhaseEdit_CH2"/>
+         </item>
+         <item row="8" column="11">
+          <widget class="QLineEdit" name="Dev1IaPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="8" column="12">
+          <widget class="QLineEdit" name="Dev1IaPhaseMinEdit_CH2"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Ib</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>幅值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="6">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>MIN(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="7">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>幅值(CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="8">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>MAX(幅值CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="9">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>MIN(幅值CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>MIN（幅值）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="5">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>MAX(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>MAX(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="10">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="11">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>MAX(相位CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="12">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>MIN(相位CH2)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+        <zorder>label_3</zorder>
+        <zorder>label_4</zorder>
+        <zorder>label_6</zorder>
+        <zorder>label_7</zorder>
+        <zorder>label</zorder>
+        <zorder>label_8</zorder>
+        <zorder>label_9</zorder>
+        <zorder>label_2</zorder>
+        <zorder>label_10</zorder>
+        <zorder>label_11</zorder>
+        <zorder>label_12</zorder>
+        <zorder>label_13</zorder>
+        <zorder>label_14</zorder>
+        <zorder>label_15</zorder>
+        <zorder>Dev1UaVolatageEdit</zorder>
+        <zorder>Dev1UaVolatageMaxEdit</zorder>
+        <zorder>Dev1UaVolatageMinEdit</zorder>
+        <zorder>Dev1UaPhaseEdit</zorder>
+        <zorder>Dev1UaPhaseMaxEdit</zorder>
+        <zorder>Dev1UaPhaseMinEdit</zorder>
+        <zorder>Dev1UaFreqEdit</zorder>
+        <zorder>Dev1UaFreqMaxEdit</zorder>
+        <zorder>Dev1UaFreqMinEdit</zorder>
+        <zorder>Dev1UbVolatageEdit</zorder>
+        <zorder>line</zorder>
+        <zorder>label_5</zorder>
+        <zorder>Dev1IaCurrentEdit</zorder>
+        <zorder>Dev1IaCurrentMaxEdit</zorder>
+        <zorder>Dev1IaCurrentMinEdit</zorder>
+        <zorder>Dev1IaPaseEdit</zorder>
+        <zorder>Dev1IaPaseMaxEdit</zorder>
+        <zorder>Dev1IaPaseMinEdit</zorder>
+        <zorder>Dev1IaCurrentEdit_CH2</zorder>
+        <zorder>Dev1IaCurrentMaxEdit_CH2</zorder>
+        <zorder>Dev1IaCurrentMinEdit_CH2</zorder>
+        <zorder>Dev1IaPhaseEdit_CH2</zorder>
+        <zorder>Dev1IaPhaseMaxEdit_CH2</zorder>
+        <zorder>Dev1IaPhaseMinEdit_CH2</zorder>
+        <zorder>Dev1UbVolatageMaxEdit</zorder>
+        <zorder>Dev1UbVolatageMinEdit</zorder>
+        <zorder>Dev1UcVolatageEdit</zorder>
+        <zorder>Dev1UcVolatageMaxEdit</zorder>
+        <zorder>Dev1UcVolatageMinEdit</zorder>
+        <zorder>Dev1UbPhaseEdit</zorder>
+        <zorder>Dev1UcPhaseEdit</zorder>
+        <zorder>Dev1UbPhaseMaxEdit</zorder>
+        <zorder>Dev1UcPhaseMaxEdit</zorder>
+        <zorder>Dev1UbPhaseMinEdit</zorder>
+        <zorder>Dev1UcPhaseMinEdit</zorder>
+        <zorder>Dev1UbFreqEdit</zorder>
+        <zorder>Dev1UcFreqMinEdit</zorder>
+        <zorder>Dev1UcFreqEdit</zorder>
+        <zorder>Dev1UcFreqMaxEdit</zorder>
+        <zorder>Dev1UbFreqMaxEdit</zorder>
+        <zorder>Dev1UbFreqMinEdit</zorder>
+        <zorder>Dev1IbCurrentEdit</zorder>
+        <zorder>Dev1IcCurrentEdit</zorder>
+        <zorder>Dev1IbCurrentMaxEdit</zorder>
+        <zorder>Dev1IcCurrentMaxEdit</zorder>
+        <zorder>Dev1IbCurrentMinEdit</zorder>
+        <zorder>Dev1IcCurrentMinEdit</zorder>
+        <zorder>Dev1IbPaseEdit</zorder>
+        <zorder>Dev1IcPaseEdit</zorder>
+        <zorder>Dev1IbPaseMaxEdit</zorder>
+        <zorder>Dev1IcPaseMaxEdit</zorder>
+        <zorder>Dev1IbPaseMinEdit</zorder>
+        <zorder>Dev1IcPaseMinEdit</zorder>
+        <zorder>Dev1IbCurrentEdit_CH2</zorder>
+        <zorder>Dev1IcCurrentEdit_CH2</zorder>
+        <zorder>Dev1IbCurrentMaxEdit_CH2</zorder>
+        <zorder>Dev1IcCurrentMaxEdit_CH2</zorder>
+        <zorder>Dev1IbCurrentMinEdit_CH2</zorder>
+        <zorder>Dev1IcCurrentMinEdit_CH2</zorder>
+        <zorder>Dev1IbPhaseEdit_CH2</zorder>
+        <zorder>Dev1IcPhaseEdit_CH2</zorder>
+        <zorder>Dev1IbPhaseMaxEdit_CH2</zorder>
+        <zorder>Dev1IcPhaseMinEdit_CH2</zorder>
+        <zorder>Dev1IcPhaseMaxEdit_CH2</zorder>
+        <zorder>Dev1IbPhaseMinEdit_CH2</zorder>
+        <zorder>Dev1SourceDataTEdit</zorder>
+        <zorder>label_16</zorder>
+        <zorder>label_17</zorder>
+        <zorder>label_18</zorder>
+        <zorder>label_19</zorder>
+        <zorder>label_20</zorder>
+        <zorder>label_21</zorder>
+        <zorder>label_22</zorder>
+        <zorder>label_23</zorder>
+        <zorder>label_24</zorder>
+        <zorder>label_25</zorder>
+        <zorder>label_26</zorder>
+        <zorder>label_27</zorder>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="title">
+         <string>设备一</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="2" column="9">
+          <widget class="QLineEdit" name="Dev2UbFreqMaxEdit"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="Dev2UbVolatageEdit"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="Dev2UaVolatageMaxEdit"/>
+         </item>
+         <item row="7" column="5">
+          <widget class="QLineEdit" name="Dev2IbPaseEdit"/>
+         </item>
+         <item row="8" column="4">
+          <widget class="QLineEdit" name="Dev2IcCurrentMinEdit"/>
+         </item>
+         <item row="7" column="8">
+          <widget class="QLineEdit" name="Dev2IbCurrentEdit_CH2"/>
+         </item>
+         <item row="8" column="5">
+          <widget class="QLineEdit" name="Dev2IcPaseEdit"/>
+         </item>
+         <item row="7" column="7">
+          <widget class="QLineEdit" name="Dev2IbPaseMinEdit"/>
+         </item>
+         <item row="7" column="6">
+          <widget class="QLineEdit" name="Dev2IbPaseMaxEdit"/>
+         </item>
+         <item row="8" column="6">
+          <widget class="QLineEdit" name="Dev2IcPaseMaxEdit"/>
+         </item>
+         <item row="8" column="7">
+          <widget class="QLineEdit" name="Dev2IcPaseMinEdit"/>
+         </item>
+         <item row="3" column="9">
+          <widget class="QLineEdit" name="Dev2UcFreqMaxEdit"/>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_45">
+           <property name="text">
+            <string>MAX(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <widget class="QLineEdit" name="Dev2UaPhaseMaxEdit"/>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLabel" name="label_46">
+           <property name="text">
+            <string>MAX(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="5">
+          <widget class="QLabel" name="label_48">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QLabel" name="label_47">
+           <property name="text">
+            <string>MIN（幅值）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QLineEdit" name="Dev2UaPhaseEdit"/>
+         </item>
+         <item row="8" column="3">
+          <widget class="QLineEdit" name="Dev2IcCurrentMaxEdit"/>
+         </item>
+         <item row="2" column="10">
+          <widget class="QLineEdit" name="Dev2UbFreqMinEdit"/>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLineEdit" name="Dev2IbCurrentMaxEdit"/>
+         </item>
+         <item row="7" column="4">
+          <widget class="QLineEdit" name="Dev2IbCurrentMinEdit"/>
+         </item>
+         <item row="8" column="2">
+          <widget class="QLineEdit" name="Dev2IcCurrentEdit"/>
+         </item>
+         <item row="7" column="2">
+          <widget class="QLineEdit" name="Dev2IbCurrentEdit"/>
+         </item>
+         <item row="1" column="7">
+          <widget class="QLineEdit" name="Dev2UaPhaseMinEdit"/>
+         </item>
+         <item row="0" column="7">
+          <widget class="QLabel" name="label_42">
+           <property name="text">
+            <string>MIN(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_43">
+           <property name="text">
+            <string>MAX(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="8">
+          <widget class="QLabel" name="label_41">
+           <property name="text">
+            <string>频率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_40">
+           <property name="text">
+            <string>Ia</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_37">
+           <property name="text">
+            <string>幅值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="Dev2UaVolatageEdit"/>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>Ic</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="text">
+            <string>Ua</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>Ib</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>MAX（频率）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="10">
+          <widget class="QLineEdit" name="Dev2UaFreqMinEdit"/>
+         </item>
+         <item row="1" column="9">
+          <widget class="QLineEdit" name="Dev2UaFreqMaxEdit"/>
+         </item>
+         <item row="1" column="8">
+          <widget class="QLineEdit" name="Dev2UaFreqEdit"/>
+         </item>
+         <item row="8" column="8">
+          <widget class="QLineEdit" name="Dev2IcCurrentEdit_CH2"/>
+         </item>
+         <item row="7" column="9">
+          <widget class="QLineEdit" name="Dev2IbCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="8" column="9">
+          <widget class="QLineEdit" name="Dev2IcCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="7" column="10">
+          <widget class="QLineEdit" name="Dev2IbCurrentMinEdit_CH2"/>
+         </item>
+         <item row="8" column="10">
+          <widget class="QLineEdit" name="Dev2IcCurrentMinEdit_CH2"/>
+         </item>
+         <item row="7" column="11">
+          <widget class="QLineEdit" name="Dev2IbPhaseEdit_CH2"/>
+         </item>
+         <item row="8" column="11">
+          <widget class="QLineEdit" name="Dev2IcPhaseEdit_CH2"/>
+         </item>
+         <item row="7" column="12">
+          <widget class="QLineEdit" name="Dev2IbPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="8" column="13">
+          <widget class="QLineEdit" name="Dev2IcPhaseMinEdit_CH2"/>
+         </item>
+         <item row="8" column="12">
+          <widget class="QLineEdit" name="Dev2IcPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="7" column="13">
+          <widget class="QLineEdit" name="Dev2IbPhaseMinEdit_CH2"/>
+         </item>
+         <item row="0" column="11" rowspan="4" colspan="3">
+          <widget class="QTextEdit" name="Dev2SourceDataTEdit"/>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>MIN(幅值)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="10">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>MIN（频率）</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="text">
+            <string>Ub</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>Uc</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="14">
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>幅值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="Dev2UaVolatageMinEdit"/>
+         </item>
+         <item row="5" column="7">
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>MIN(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="6">
+          <widget class="QLabel" name="label_49">
+           <property name="text">
+            <string>MAX(相位)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="8">
+          <widget class="QLineEdit" name="Dev2UbFreqEdit"/>
+         </item>
+         <item row="5" column="8">
+          <widget class="QLabel" name="label_51">
+           <property name="text">
+            <string>幅值(CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="10">
+          <widget class="QLineEdit" name="Dev2UcFreqMinEdit"/>
+         </item>
+         <item row="3" column="7">
+          <widget class="QLineEdit" name="Dev2UcPhaseMinEdit"/>
+         </item>
+         <item row="3" column="8">
+          <widget class="QLineEdit" name="Dev2UcFreqEdit"/>
+         </item>
+         <item row="2" column="7">
+          <widget class="QLineEdit" name="Dev2UbPhaseMinEdit"/>
+         </item>
+         <item row="3" column="6">
+          <widget class="QLineEdit" name="Dev2UcPhaseMaxEdit"/>
+         </item>
+         <item row="2" column="6">
+          <widget class="QLineEdit" name="Dev2UbPhaseMaxEdit"/>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLineEdit" name="Dev2UcVolatageMinEdit"/>
+         </item>
+         <item row="6" column="2">
+          <widget class="QLineEdit" name="Dev2IaCurrentEdit"/>
+         </item>
+         <item row="5" column="9">
+          <widget class="QLabel" name="label_52">
+           <property name="text">
+            <string>MAX(幅值CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="Dev2UcVolatageMaxEdit"/>
+         </item>
+         <item row="5" column="12">
+          <widget class="QLabel" name="label_55">
+           <property name="text">
+            <string>MAX(相位CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="10">
+          <widget class="QLineEdit" name="Dev2IaCurrentMinEdit_CH2"/>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="Dev2UbVolatageMinEdit"/>
+         </item>
+         <item row="6" column="7">
+          <widget class="QLineEdit" name="Dev2IaPaseMinEdit"/>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="Dev2UbVolatageMaxEdit"/>
+         </item>
+         <item row="6" column="13">
+          <widget class="QLineEdit" name="Dev2IaPhaseMinEdit_CH2"/>
+         </item>
+         <item row="6" column="12">
+          <widget class="QLineEdit" name="Dev2IaPhaseMaxEdit_CH2"/>
+         </item>
+         <item row="6" column="11">
+          <widget class="QLineEdit" name="Dev2IaPhaseEdit_CH2"/>
+         </item>
+         <item row="6" column="9">
+          <widget class="QLineEdit" name="Dev2IaCurrentMaxEdit_CH2"/>
+         </item>
+         <item row="6" column="8">
+          <widget class="QLineEdit" name="Dev2IaCurrentEdit_CH2"/>
+         </item>
+         <item row="6" column="6">
+          <widget class="QLineEdit" name="Dev2IaPaseMaxEdit"/>
+         </item>
+         <item row="6" column="5">
+          <widget class="QLineEdit" name="Dev2IaPaseEdit"/>
+         </item>
+         <item row="6" column="4">
+          <widget class="QLineEdit" name="Dev2IaCurrentMinEdit"/>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLineEdit" name="Dev2IaCurrentMaxEdit"/>
+         </item>
+         <item row="5" column="13">
+          <widget class="QLabel" name="label_56">
+           <property name="text">
+            <string>MIN(相位CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="11">
+          <widget class="QLabel" name="label_54">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLineEdit" name="Dev2UbPhaseEdit"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="Dev2UcVolatageEdit"/>
+         </item>
+         <item row="5" column="10">
+          <widget class="QLabel" name="label_53">
+           <property name="text">
+            <string>MIN(幅值CH2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5">
+          <widget class="QLineEdit" name="Dev2UcPhaseEdit"/>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_44">
+           <property name="text">
+            <string>相位</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

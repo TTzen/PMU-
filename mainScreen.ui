@@ -40,7 +40,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout"/>
       </widget>
-      <widget class="QWidget" name="WidgetSync">
+      <widget class="Sync" name="WidgetSync">
        <attribute name="icon">
         <iconset resource="source.qrc">
          <normaloff>:/config/image/Sync.png</normaloff>:/config/image/Sync.png</iconset>
@@ -81,7 +81,13 @@
   <customwidget>
    <class>meaSure</class>
    <extends>QWidget</extends>
-   <header location="global">measure.h</header>
+   <header>measure.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Sync</class>
+   <extends>QWidget</extends>
+   <header location="global">sync.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

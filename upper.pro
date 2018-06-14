@@ -33,7 +33,8 @@ SOURCES += \
     power_parameter/voltageSignal.cpp \
     mainScreen.cpp \
     configMenu.cpp \
-    measure.cpp
+    measure.cpp \
+    sync.cpp
 
 HEADERS += \
     power_parameter/currentSignal.h \
@@ -41,12 +42,14 @@ HEADERS += \
     power_parameter/voltageSignal.h \
     mainScreen.h \
     configMenu.h \
-    measure.h
+    measure.h \
+    sync.h
 
 FORMS += \
     mainScreen.ui \
     configMenu.ui \
-    measure.ui
+    measure.ui \
+    sync.ui
 
 RESOURCES += \
     source.qrc

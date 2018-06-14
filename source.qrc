@@ -10,5 +10,7 @@
         <file>image/stop_active.png</file>
         <file>image/stop_passive.png</file>
         <file>image/GPS.png</file>
+        <file>image/Sync_start.png</file>
+        <file>image/Sync_stop.png</file>
     </qresource>
 </RCC>

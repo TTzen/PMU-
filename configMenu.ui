@@ -135,7 +135,6 @@
           </widget>
          </item>
         </layout>
-        <zorder>groupBox_2</zorder>
         <zorder>label_2</zorder>
         <zorder>Dev2IPEdit</zorder>
         <zorder>horizontalSpacer_2</zorder>

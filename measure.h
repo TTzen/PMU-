@@ -19,8 +19,10 @@ class meaSure : public QWidget
         QLineEdit* UVoltage;
         QLineEdit* UPhase;
         QLineEdit* UFreq;
-        QLineEdit* ICurrent;
-        QLineEdit* IPhase;
+        QLineEdit* ICurrent_ch1;
+        QLineEdit* IPhase_ch1;
+        QLineEdit* ICurrent_ch2;
+        QLineEdit* IPhase_ch2;
     } AnyPhaseWindows;  //任意相位的显示窗口指针
 
 public:
@@ -34,7 +36,7 @@ public slots:
 
 private:
     void processDatagram(QNetworkDatagram& Datagram);
-    void SetAnyPhaseDisplayInfo(AnyPhaseWindows& AnyPhase, voltageSignal Usignal, currentSignal Isignal);
+    void SetAnyPhaseDisplayInfo(AnyPhaseWindows& AnyPhase, voltageSignal Usignal, currentSignal Isignal_CH1, currentSignal Isignal_CH2);
 
 private:
     Ui::meaSure *ui;

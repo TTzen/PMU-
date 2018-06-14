@@ -18,13 +18,17 @@ public:
     explicit mainScreen(QWidget *parent = 0);
     ~mainScreen();
 
+signals:
+    void DatagramSendToMeaSure(QNetworkDatagram);
+    void DatagramSendToSync(QNetworkDatagram);
+
 public slots:
     void processDatagram();
+    void changeWindows(int);//切换窗口
 
 private:
     Ui::mainScreen* ui;
 
-    meaSure*        m_meaSure;      //测量窗口
     configMenu*     m_configmenu;
     QUdpSocket*     m_udpService;
 };
